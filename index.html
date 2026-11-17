@@ -96,26 +96,26 @@ tailwind.config = {
   .tgl::after{content:"";position:absolute;top:3px;left:19px;width:18px;height:18px;border-radius:50%;background:#fff;transition:left .15s}
   .tgl.off{background:var(--g300)}.tgl.off::after{left:3px}
   .ct-tools{padding:16px 16px 0;display:flex;gap:8px;position:relative}
-  .search{display:flex;align-items:center;height:48px;border:1px solid var(--p200);border-radius:var(--r-xl);background:var(--input);overflow:hidden;flex:1;min-width:0}
+  .search{display:flex;align-items:center;height:40px;border:1px solid var(--p200);border-radius:var(--r-xl);background:var(--input);overflow:hidden;flex:1;min-width:0}
   .search .s-in{display:flex;align-items:center;gap:8px;padding:0 12px;flex:1;min-width:0;height:100%}
   .search input{flex:1;min-width:0;border:0;background:transparent;font-size:14px;color:var(--g800);outline:none;padding:0}
   .search input::placeholder{color:var(--g600)}
   .search .fbtn{height:100%;display:flex;align-items:center;gap:8px;padding:0 12px;border-left:1px solid var(--p200);background:var(--p50);font-size:14px;font-weight:500;color:var(--g1000)}
   .search .fbtn:hover,.search .fbtn.on{background:var(--p100)}
-  .chips{display:flex;gap:8px;padding:16px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .chips{display:flex;gap:8px;padding:12px 16px 16px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
   .chip{height:40px;display:inline-flex;align-items:center;gap:8px;padding:0 12px;border:1px solid var(--p200);border-radius:var(--r-xl);font-size:14px;font-weight:500;color:var(--g800);background:#fff;white-space:nowrap;transition:background .15s}
   .chip:hover{background:var(--p50)}
   .chip.on{background:var(--p100);color:var(--p1000)}
   .badge-or{background:var(--s100);color:var(--s1000);border-radius:8px;padding:0 8px;font-size:14px;font-weight:500;line-height:24px}
   #convlist{flex:1;min-height:0;padding:0 0 8px}
-  .cv{display:flex;gap:12px;padding:16px;border-bottom:1px solid var(--g50);position:relative;cursor:pointer;margin:0 0;transition:background .12s}
+  .cv{display:flex;gap:12px;padding:16px;border-bottom:4px solid var(--g50);position:relative;cursor:pointer;margin:0 0;transition:background .12s}
   .cv:hover{background:var(--p50)}
   .cv.sel{background:#fff;box-shadow:inset 0 0 0 1px var(--p300);border-radius:var(--r-xl);margin:0 12px;padding:12px 4px 12px 4px;border-bottom:0}
-  .cv.sel{background:var(--p50)}
+  .cv.sel{background:var(--p50);box-shadow:inset 0 0 0 2px var(--p200)}
   .cv .nm{font-size:16px;font-weight:500;color:var(--g1000);display:flex;align-items:center;gap:6px;line-height:24px}
   .cv .lm{font-size:14px;font-style:italic;color:var(--g600);display:flex;align-items:center;gap:4px;line-height:21px}
-  .cv .tm{font-size:14px;color:var(--g600);line-height:21px}
-  .cv.unread .lm,.cv.unread .tm{color:var(--s1000)}
+  .cv .tm{font-size:14px;font-style:italic;color:var(--g600);line-height:21px}
+  .cv.unread .tm{color:var(--s1000)}.cv.unread .lm>span:first-child{color:var(--s1000)}
   .cv .tags{display:flex;align-items:center;gap:8px;margin-top:6px}
   .sq{width:32px;height:32px;border-radius:var(--r-lg);display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--p200);background:#fff;font-size:15px}
   .lbl{height:32px;display:inline-flex;align-items:center;padding:0 10px;border-radius:var(--r-lg);font-size:14px;font-weight:500;border:1px solid transparent;white-space:nowrap}
@@ -126,9 +126,9 @@ tailwind.config = {
   .lbl.blue{background:var(--blue100);color:var(--blue700);border-color:#C3DDFD}
   .lbl.purple{background:var(--purple100);color:var(--purple700);border-color:#D4CAFE}
   .lbl.green{background:var(--green100);color:var(--green800);border-color:#84E1BC}
-  .rank-hot{background:#FFF2E5;color:#E02424;border-color:var(--s200)}
-  .rank-warm{background:#FEF9D8;color:#B7791F;border-color:#FCE96A}
-  .rank-cold{background:#E8F4FE;color:#3F83F8;border-color:#C3DDFD}
+  .rank-hot{background:#FDF2F2;color:#E02424;border-color:#FBD5D5}
+  .rank-warm{background:#FFF8F1;color:#B7791F;border-color:#FEECDC}
+  .rank-cold{background:#EBF5FF;color:#3F83F8;border-color:#E1EFFE}
   .av{border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:500;flex-shrink:0;position:relative;color:var(--g800);background:var(--p100);overflow:visible}
   .av .cb{position:absolute;right:-3px;bottom:-3px;width:18px;height:18px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 1px var(--g50)}
   .empty-box{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:64px 16px;gap:12px;color:var(--g600);font-weight:500;font-size:16px;text-align:center}
@@ -145,7 +145,7 @@ tailwind.config = {
   .radio.on{border-color:var(--p1000)}.radio.on::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--p1000)}
   .cbx{width:16px;height:16px;border-radius:4px;border:1px solid var(--g800);display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;background:#fff}
   .cbx.on{background:var(--p1000);border-color:var(--p1000)}
-  .menu-i{display:flex;align-items:center;gap:8px;height:40px;padding:0 12px;font-size:14px;font-weight:500;color:var(--g800);width:100%;text-align:left}
+  .menu-i{display:flex;align-items:center;gap:8px;height:40px;padding:0 16px;font-size:14px;font-weight:400;color:var(--g1000);width:100%;text-align:left}
   .menu-i:hover{background:var(--p50)}
   .menu-i.green{color:var(--green500)}.menu-i.red{color:var(--red600)}
 
@@ -158,10 +158,10 @@ tailwind.config = {
   .ibtn.on{color:var(--s1000)}
   .banner{height:32px;display:flex;align-items:center;justify-content:center;gap:6px;font-size:14px;background:var(--green100);color:var(--g800);flex-shrink:0}
   .banner b{font-weight:500}
-  #msgs{flex:1;min-height:0;padding:16px 16px 8px;display:flex;flex-direction:column;gap:12px;background:#fff}
+  #msgs{flex:1;min-height:0;padding:12px 16px 8px;display:flex;flex-direction:column;gap:12px;background:#fff}
   .sepd{text-align:center;font-size:12px;color:var(--g600);text-transform:uppercase;letter-spacing:.06em;padding:4px 0}
   .m{display:flex;flex-direction:column;max-width:84%}
-  .m.in{align-self:flex-start}.m.out{align-self:flex-end;align-items:flex-end}
+  .m.in{align-self:flex-start}.m.out{align-self:flex-end;align-items:flex-end;max-width:400px}.m.in .bub{max-width:356px}
   .m-row{display:flex;gap:8px;align-items:flex-end}
   .bub{border-radius:var(--r-2xl);padding:12px;font-size:14px;line-height:21px;white-space:pre-wrap;word-break:break-word}
   .m.in .bub{background:var(--g50);color:var(--g800)}
@@ -206,7 +206,7 @@ tailwind.config = {
   .fld:hover{background:var(--p50)}
   .fld .v{color:var(--g1000);font-weight:500}
   .fld.empty{border-style:dashed;color:var(--g600)}
-  .fld.empty .ph{font-size:14px;color:var(--g400)}
+  .fld.empty .ph{font-size:16px;color:var(--g400)}.fld.empty .lb{font-weight:500}
   .fld input{border:0;outline:0;font-size:14px;color:var(--g1000);flex:1;min-width:0;background:transparent}
   .pill{display:inline-flex;align-items:center;height:32px;padding:0 10px;border-radius:var(--r-lg);background:var(--g50);font-size:14px;color:var(--g800);font-weight:500}
   .pill.blue{background:var(--blue100);color:var(--blue700);gap:6px}
@@ -235,10 +235,10 @@ tailwind.config = {
   .center-modal p{margin:0;color:var(--g600);font-size:16px}
   .toast{position:fixed;left:24px;bottom:24px;z-index:90;background:#fff;border-radius:var(--r-xl);box-shadow:0 8px 24px rgba(46,25,85,.18);padding:12px;display:flex;gap:12px;width:300px;animation:rise .2s ease-out;border:1px solid var(--p100)}
   .toast.err{border-color:#F8B4B4}
-  .tpl{border:1px solid var(--p200);border-radius:var(--r-xl);padding:12px;background:var(--p50);text-align:left;width:100%;cursor:pointer;transition:border-color .12s,background .12s}
-  .tpl:hover{background:var(--p100)}.tpl.sel{border-color:var(--p1000);background:var(--p100)}
-  .tpl .tt{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--g1000)}
-  .tpl .tx{font-size:11px;color:var(--g600);margin-top:8px;line-height:12px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .tpl{border:1px solid var(--p200);border-radius:var(--r-xl);padding:16px;background:var(--bg);text-align:left;width:100%;cursor:pointer;transition:border-color .12s,background .12s}
+  .tpl:hover{border-color:var(--p300)}.tpl.sel{border-color:var(--p800);background:#fff}
+  .tpl .tt{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:400;color:var(--g1000);min-height:28px}
+  .tpl .tx{font-size:12px;color:var(--g600);margin-top:10px;line-height:18px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
   .pend{margin-left:auto;background:var(--s100);color:var(--s1000);border:1px solid var(--s200);border-radius:8px;font-size:12px;padding:2px 10px}
   .upl{border:1.5px dashed var(--p300);border-radius:var(--r-xl);background:var(--p50);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:24px 12px;text-align:center;font-size:14px;color:var(--g800);cursor:pointer}
   .seg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
@@ -309,6 +309,12 @@ tailwind.config = {
     .chips{padding:12px}
   }
 @media(max-width:767px){#demo-btn,#demo-pane{display:none!important}}
+  .ct-tools .btn-icon{width:40px!important;height:40px!important}
+  .asq{width:32px;height:32px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#3b2a1c,#7a5a3a);color:#fff;font-size:11px;flex-shrink:0}
+  .send-btn{color:var(--p300)!important}.send-btn.ready{color:var(--p1000)!important}
+  .om-tab.active{box-shadow:inset 0 0 0 1px var(--p200)}
+  body.list-collapsed #contacts{display:none}
+  .pend{margin-left:auto}
 </style>
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -520,6 +526,14 @@ const IC = {
   bot: ['0 0 24 24','<g fill="currentColor" stroke="none"><path d="M12 2a1.5 1.5 0 0 1 .75 2.8V6H17a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h4.25V4.8A1.5 1.5 0 0 1 12 2Zm-3 8.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm6 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/></g>'],
   lock: ['0 0 24 24','<path d="M12 12.5V10a4 4 0 0 1 8 0"/>'],
   swap: ['0 0 24 24','<path d="M6 8h13l-3-3M18 16H5l3 3"/>'],
+  sad: ['0 0 24 24','<path d="M9 22h6c5 0 7-2 7-7V9c0-5-2-7-7-7H9C4 2 2 4 2 9v6c0 5 2 7 7 7Z"/><path d="M8.5 10.5h.01M15.5 10.5h.01" stroke-width="2.4"/><path d="M8.4 17.2a4.6 4.6 0 0 1 7.2 0"/>'],
+  sumSq: ['0 0 24 24','<rect x="3" y="3" width="18" height="18" rx="6"/><rect x="8" y="8" width="8" height="8" rx="2.5"/>'],
+  happySq: ['0 0 24 24','<path d="M9 22h6c5 0 7-2 7-7V9c0-5-2-7-7-7H9C4 2 2 4 2 9v6c0 5 2 7 7 7Z"/><path d="M8.5 9.3h.01M15.5 9.3h.01" stroke-width="2.4"/><path d="M8.4 13.4h7.2c.5 0 .9.4.8.9-.4 1.9-2.4 3.3-4.4 3.3s-4-1.4-4.4-3.3c-.1-.5.3-.9.8-.9Z"/>'],
+  profC: ['0 0 24 24','<path d="M12.12 12.78a.99.99 0 0 0-.24 0 3.27 3.27 0 1 1 .24 0ZM18.74 19.38A9.93 9.93 0 0 1 12 22c-2.6 0-4.96-.99-6.74-2.62.1-.94.7-1.86 1.77-2.58 2.74-1.82 7.22-1.82 9.94 0 1.07.72 1.67 1.64 1.77 2.58Z"/><circle cx="12" cy="12" r="10"/>'],
+  chart: ['0 0 24 24','<path d="M2 22h20M9.75 4v18h4.5V4c0-1.1-.45-2-1.8-2h-.9c-1.35 0-1.8.9-1.8 2ZM3 10v12h4V10c0-1.1-.4-2-1.6-2h-.8C3.4 8 3 8.9 3 10ZM17 15v7h4v-7c0-1.1-.4-2-1.6-2h-.8c-1.2 0-1.6.9-1.6 2Z"/>'],
+  scope: ['0 0 24 24','<path d="m14.5 3.5 6 6-9.6 3.9-2.3-2.3 5.9-7.6ZM8.6 11.1 4 13l1.8 1.8M10.9 13.4l-1.9 4.6M11.5 16 8 22M11.5 16l4 6"/><path d="m18.5 1.5 4 4"/>'],
+  gear: ['0 0 24 24','<circle cx="12" cy="12" r="3"/><path d="M2 12.88v-1.76c0-1.04.85-1.9 1.9-1.9 1.81 0 2.55-1.28 1.64-2.85-.52-.9-.21-2.07.7-2.59l1.73-.99c.79-.47 1.81-.19 2.28.6l.11.19c.9 1.57 2.38 1.57 3.29 0l.11-.19c.47-.79 1.49-1.07 2.28-.6l1.73.99c.91.52 1.22 1.69.7 2.59-.91 1.57-.17 2.85 1.64 2.85 1.04 0 1.9.85 1.9 1.9v1.76c0 1.04-.85 1.9-1.9 1.9-1.81 0-2.55 1.28-1.64 2.85.52.91.21 2.07-.7 2.59l-1.73.99c-.79.47-1.81.19-2.28-.6l-.11-.19c-.9-1.57-2.38-1.57-3.29 0l-.11.19c-.47.79-1.49 1.07-2.28.6l-1.73-.99a1.9 1.9 0 0 1-.7-2.59c.91-1.57.17-2.85-1.64-2.85-1.05 0-1.9-.86-1.9-1.9Z"/>'],
+  brain: ['0 0 24 24','<path d="M12 5.5c-.6-1.8-2.1-3-3.9-3-2 0-3.6 1.5-3.6 3.4-1.4.5-2.5 1.9-2.5 3.5 0 .9.3 1.7.9 2.4-.6.7-.9 1.5-.9 2.4 0 1.7 1.1 3.1 2.6 3.6.2 1.9 1.8 3.4 3.7 3.4 1.6 0 3-.9 3.7-2.3V5.5Z"/><path d="M8.5 8.5c.8 0 1.5.7 1.5 1.5M6 12.5h2.5M8 16c.8 0 1.5-.7 1.5-1.5M15 6.5h3M15 10h5M15 14h5M15 17.5h3"/><circle cx="18.8" cy="6.5" r=".9"/><circle cx="21" cy="10" r=".9"/><circle cx="21" cy="14" r=".9"/><circle cx="18.8" cy="17.5" r=".9"/>'],
   /* channel glyphs (16 box, filled — exported from Figma for WhatsApp / Facebook / Instagram) */
 };
 function ic(n, s = 20, extra = '') { const [vb, inner] = IC[n]; return `<svg class="ico" width="${s}" height="${s}" viewBox="${vb}" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ${extra}>${inner}</svg>`; }
@@ -559,7 +573,7 @@ const CONTACTS = [
   { id: 'c5', name: 'Saeed Gamal', init: 'SG', ch: 'snapchat', handle: '@snaplenvntura.eg', last: 'Good Morning, i jusr wanted to ask you…', st: 'read', time: '12:30 AM', rank: null, labels: [], asg: null, sat: null, info: mkInfo(false), f: { aiRating: true }, ts: 1, handles: [{ ch: 'snapchat', h: '@snaplenvntura.eg' }] },
   { id: 'c6', name: 'Mona Khaled', init: 'MK', photo: true, ch: 'facebook', handle: '@levntura.eg', last: 'Thank you, see you soon!', st: 'read', time: 'Yesterday', rank: 'warm', labels: [3], asg: 'a2', sat: 'happy', info: mkInfo(true), f: { closed: true }, ts: 0, handles: [{ ch: 'facebook', h: '@levntura.eg' }] }
 ];
-CONTACTS.forEach(c => { c.msgs = null; c.star = false; c.unreadFlag = !!c.unread; c.aiReply = true; });
+CONTACTS.forEach(c => { c.msgs = null; c.star = false; c.unreadFlag = !!c.unread; c.aiReply = false; });
 
 /* ---------- state ---------- */
 const S = {
@@ -570,6 +584,8 @@ const S = {
   pop: null, modal: null, aiCh: { facebook: true, instagram: true, snapchat: true, whatsapp: true, tiktok: true },
   editing: null, tplList: TEMPLATES.slice(), newTpl: { name: '', lang: '', ch: 'whatsapp', body: '' }, mergeSel: {}, delSel: {}, tplSel: null, demoOpen: false
 };
+const VER = `<svg width="18" height="18" viewBox="0 0 24 24" aria-label="Verified"><path fill="#BDADDD" d="M21.08 8.58v6.84c0 1.12-.6 2.16-1.57 2.73l-5.94 3.43c-.97.56-2.17.56-3.15 0l-5.94-3.43a3.15 3.15 0 0 1-1.57-2.73V8.58c0-1.12.6-2.16 1.57-2.73l5.94-3.43c.97-.56 2.17-.56 3.15 0l5.94 3.43c.97.57 1.57 1.6 1.57 2.73Z"/><path fill="#5B31AA" d="M12 11.9a2.33 2.33 0 1 0 0-4.66 2.33 2.33 0 0 0 0 4.66ZM14.68 16.56c.81 0 1.28-.9.83-1.57A4.25 4.25 0 0 0 12 13.24c-1.47 0-2.76.73-3.51 1.75-.45.67.02 1.57.83 1.57h5.36Z"/></svg>`;
+const TLOGO = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 2H7C4 2 2 4 2 7v6c0 3 2 5 5 5h1.5c.3 0 .6.2.8.4l1.5 2c.7.9 1.8.9 2.4 0l1.5-2c.2-.2.5-.4.8-.4H17c3 0 5-2 5-5V7c0-3-2-5-5-5Z" stroke="currentColor" stroke-width="1.5"/><path d="M9 5.5v7.2c0 .9.5 1.3 1.4 1.3h.9M7.6 8.2h3.3" stroke="#5B31AA" stroke-width="1.8" stroke-linecap="round"/><path d="m13.2 7.2 2.6 2.6-2.6 2.6" stroke="#FD8100" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 const cur = () => CONTACTS.find(c => c.id === S.sel) || null;
 const nowT = () => { const d = new Date(); let h = d.getHours(), m = d.getMinutes(); const ap = h >= 12 ? 'PM' : 'AM'; h = h % 12 || 12; return `${h}:${String(m).padStart(2, '0')}${ap}`; };
 
@@ -586,14 +602,14 @@ const msgsOf = c => c.msgs || (c.msgs = baseMsgs(c));
 
 /* ---------- builders ---------- */
 function avatar(o, size = 40, badge) {
-  const bg = o.photo ? 'linear-gradient(135deg,#F3C196,#B97A62)' : 'var(--p100)';
+  const bg = o.photo ? 'linear-gradient(135deg,#F3C196,#B97A62)' : 'var(--g100)';
   return `<span class="av" style="width:${size}px;height:${size}px;background:${bg};font-size:${Math.round(size * .34)}px;${o.photo ? 'color:#fff' : ''}">${esc(o.init || '')}${badge ? `<span class="cb">${chIcon(badge, Math.round(size * .3) + 4)}</span>` : ''}</span>`;
 }
-const statusIco = c => c.st === 'in' ? `<span style="color:var(--s1000)">${ic('arrIn', 14)}</span>` : c.st === 'read' ? `<span style="color:var(--p1000)">${ic('check2', 14)}</span>` : `<span style="color:var(--g600)">${ic('check', 14)}</span>`;
-const satIco = k => k === 'angry' ? `<span class="sq" style="border-color:#F8B4B4;font-size:16px">😡</span>` : k === 'happy' ? `<span class="sq" style="border-color:#84E1BC">${ic('tickSq', 22)}</span>` : k === 'snooze' ? `<span class="sq" style="border-color:var(--s200)">${ic('timer', 20)}</span>` : '';
+const statusIco = c => c.st === 'in' ? `<span style="color:var(--s1000)" class="arr">${ic('arrIn', 14)}</span>` : c.st === 'read' ? `<span style="color:var(--p1000)">${ic('check2', 14)}</span>` : `<span style="color:var(--g600)">${ic('check', 14)}</span>`;
+const satIco = k => k === 'angry' ? `<span class="sq" style="border-color:#FBD5D5;color:#E02424">${ic('sad', 22)}</span>` : k === 'happy' ? `<span class="sq" style="border-color:#84E1BC">${ic('tickSq', 22)}</span>` : k === 'snooze' ? `<span class="sq" style="border-color:var(--s200)">${ic('timer', 20)}</span>` : '';
 const rankChip = r => r ? `<span class="sq rank-${r}" title="${RANKS[r].n}">${RANKS[r].e}</span>` : '';
 const labelChip = i => `<span class="lbl ${LABELS[i].k}">${LABELS[i].n}</span>`;
-const asgAv = id => { const a = ADMINS.find(x => x.id === id); return a ? `<span class="av" style="width:32px;height:32px;background:linear-gradient(135deg,#3b2a1c,#7a5a3a);color:#fff;font-size:11px" title="${esc(a.n)}">${a.n.split(' ').map(w => w[0]).join('')}</span>` : `<span class="sq" style="width:32px">${ic('user', 18)}</span>`; };
+const asgAv = id => { const a = ADMINS.find(x => x.id === id); return a ? `<span class="asq" title="${esc(a.n)}">${a.n.split(' ').map(w => w[0]).join('')}</span>` : `<span class="sq" style="width:32px">${ic('user', 18)}</span>`; };
 
 function filtered() {
   if (S.forceEmpty) return [];
@@ -626,9 +642,9 @@ function renderMenu() {
   const g = k => ({ category: '<path d="M7 8.33h2c2 0 3-1 3-3V3.33c0-2-1-3-3-3H7c-2 0-3 1-3 3v2c0 2 1 3 3 3ZM17 8.33h2c2 0 3-1 3-3V3.33c0-2-1-3-3-3h-2c-2 0-3 1-3 3v2c0 2 1 3 3 3Z" transform="translate(-1 2)"/><path d="M17 20h2c2 0 3-1 3-3v-2c0-2-1-3-3-3h-2c-2 0-3 1-3 3v2c0 2 1 3 3 3ZM7 20h2c2 0 3-1 3-3v-2c0-2-1-3-3-3H7c-2 0-3 1-3 3v2c0 2 1 3 3 3Z" transform="translate(-1 0)"/>' })[k];
   const icons = {
     grid: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2H5C3 2 2 3 2 5v4c0 2 1 3 3 3h4c2 0 3-1 3-3V5c0-2-1-3-3-3ZM19 2h-4c-2 0-3 1-3 3v4c0 2 1 3 3 3h4c2 0 3-1 3-3V5c0-2-1-3-3-3ZM19 12h-4c-2 0-3 1-3 3v4c0 2 1 3 3 3h4c2 0 3-1 3-3v-4c0-2-1-3-3-3ZM9 12H5c-2 0-3 1-3 3v4c0 2 1 3 3 3h4c2 0 3-1 3-3v-4c0-2-1-3-3-3Z"/></svg>`,
-    inbox: ic('msgBold', 24), kb: ic('msgSq', 24), auto: ic('hier', 24), agents: ic('bot', 24), ai: ic('user', 24), contacts: ic('users', 24), stats: ic('sort', 24), scope: ic('search', 24), set: ic('flash', 24)
+    inbox: ic('msgBold', 24), kb: TLOGO, auto: ic('hier', 24), agents: ic('brain', 24), ai: ic('happySq', 24), contacts: ic('profC', 24), stats: ic('chart', 24), scope: ic('scope', 24), set: ic('gear', 24)
   };
-  const tabs = [['grid', 'Overview'], ['inbox', 'Inbox'], ['kb', 'Channels'], ['auto', 'Automation'], ['agents', 'AI Agents'], ['ai', 'Tia Chat'], ['contacts', 'Contacts'], ['stats', 'Reports'], ['scope', 'Knowledge Base'], ['set', 'Settings']];
+  const tabs = [['grid', 'Overview'], ['inbox', 'Inbox'], ['kb', 'Channels'], ['auto', 'Automation'], ['agents', 'Knowledge Base'], ['ai', 'AI Agents'], ['contacts', 'Contacts'], ['stats', 'Reports'], ['scope', 'Insights'], ['set', 'Settings']]; // GAP: tooltip names not in Figma
   $('#omnimenu').innerHTML = tabs.map(([k, l]) => `<button class="om-tab ${k === 'inbox' ? 'active' : ''}" data-act="omTab" data-arg="${k}" aria-label="${l}">${icons[k]}<span class="tip">${l}</span></button>`).join('');
 }
 
@@ -642,7 +658,7 @@ function renderList() {
     return `<div class="cv ${sel ? 'sel' : ''} ${c.unreadFlag ? 'unread' : ''}" data-act="selectConv" data-arg="${c.id}" role="button" tabindex="0" aria-label="Conversation with ${esc(c.name)}">
       <div>${avatar(c, 40, c.ch)}</div>
       <div class="grow">
-        <div class="nm"><span class="trunc">${esc(c.name)}</span>${c.verified ? `<span style="color:var(--p400)">${ic('user', 16)}</span>` : ''}</div>
+        <div class="nm"><span class="trunc">${esc(c.name)}</span>${c.verified ? VER : ''}</div>
         <div class="row" style="justify-content:space-between;gap:8px"><div class="lm grow">${statusIco(c)}<span class="trunc">${esc(c.last)}</span></div>${c.unread && c.unreadFlag ? `<span class="badge-or">${c.unread}</span>` : ''}</div>
         <div class="tm">${c.time}</div>
         <div class="tags">
@@ -655,7 +671,7 @@ function renderList() {
       No Messages yet!</div>`;
   $('#contacts').innerHTML = `
     <div class="ct-head">
-      <button class="ibtn collapse-btn" style="width:24px;height:24px" data-act="noop" aria-label="Collapse inbox">${ic('sbl', 24)}</button>
+      <button class="ibtn collapse-btn" style="width:24px;height:24px" data-act="listTgl" aria-label="Hide inbox list">${ic('sbl', 24)}</button>
       <h2>My Inbox</h2><span class="count">${total}</span>
       <span class="grow"></span>
       <button class="row" style="gap:6px;font-size:14px;font-weight:500;color:var(--g800)" data-act="aiModal" aria-label="AI reply settings"><span class="tgl ${S.aiCh && Object.values(S.aiCh).some(Boolean) ? '' : 'off'}" style="width:40px;height:24px"></span>AI reply</button>
@@ -693,22 +709,22 @@ function countMatches(c) {
 }
 function composerHTML(c) {
   const exp = c.f.expired && S.mode !== 'comment';
-  const chBtn = `<button class="row" style="gap:2px;color:var(--g800)" data-pop data-act="chPop" aria-label="Switch channel">${chIcon(c.ch, 20)}${ic('chev', 14)}</button>`;
+  const chBtn = `<button class="row" style="gap:2px;color:var(--g600)" data-pop data-act="chPop" aria-label="Switch channel">${chIcon(c.ch, 20).replace(/fill="#[0-9A-Fa-f]{3,6}"/g, 'fill="#827599"')}${ic('chev', 14)}</button>`;
   const aiTgl = `<span class="row" style="gap:6px;font-size:14px;color:var(--g800);white-space:nowrap">AI reply<button class="tgl ${c.aiReply ? '' : 'off'}" data-act="aiTgl" role="switch" aria-checked="${c.aiReply}" aria-label="AI reply"></button></span>`;
   const top = `<div class="cp-top"><label><span class="cbx ${S.mode === 'comment' ? 'on' : ''}">${S.mode === 'comment' ? `<span style="color:#fff">${ic('check', 12)}</span>` : ''}</span><input type="checkbox" hidden data-act="modeTgl" ${S.mode === 'comment' ? 'checked' : ''}>As Comment <span style="color:var(--g600)">${ic('info', 16)}</span></label>
     <button class="aibtn" data-act="aiAssist" style="${S.mode === 'comment' ? 'opacity:.7' : ''}">${ic('magic', 20)}AI Assistant${S.ai ? ic('chev', 14) : ''}</button></div>`;
   let box;
   if (exp) box = `<div class="expired"><span class="row" style="gap:8px"><span>${chIcon('whatsapp', 22)}</span>No message in past 24hrs <span style="color:var(--g600)">${ic('info', 16)}</span></span><button class="btn btn-primary" style="height:36px" data-pop data-act="expTpl" id="exp-btn">${ic('tplBox', 18)}Select template ${ic('send', 18)}</button></div>`;
-  else if (S.mode === 'comment') box = `<div class="cp-box cmt"><div class="cp-line"><span style="color:var(--p1000)">${ic('msgBold', 22)}</span><input id="cp-in" data-send placeholder="Write Your Comment" value="${esc(S.draft)}" aria-label="Write your comment"><button class="ibtn" data-act="send" style="color:var(--p1000)" aria-label="Send">${ic('send', 24)}</button></div></div>`;
+  else if (S.mode === 'comment') box = `<div class="cp-box cmt"><div class="cp-line"><span style="color:var(--p1000)">${ic('msgBold', 22)}</span><input id="cp-in" data-send placeholder="Write Your Comment" value="${esc(S.draft)}" aria-label="Write your comment"><button class="ibtn send-btn ${S.draft.trim() ? 'ready' : ''}" data-act="send" aria-label="Send">${ic('send', 24)}</button></div></div>`;
   else if (S.ai || S.summary || S.tpl) {
     const chip = S.tpl ? `<span class="chipx tp">${chIcon(S.tpl.ch, 18)}${esc(S.tpl.n)}<button data-act="tplClear" aria-label="Remove template">${ic('close', 14)}</button></span>`
       : S.summary ? `<span class="chipx sum">${ic('msgSq', 18)}Summary <button data-act="noop" aria-label="Good">${ic('up', 16)}</button><button data-act="noop" aria-label="Bad">${ic('down', 16)}</button><button data-act="aiAssist" aria-label="Regenerate">${ic('refresh', 16)}</button><button data-act="clearAI" aria-label="Close">${ic('close', 14)}</button></span>`
         : `<span class="chipx aiA">${ic('magic', 18)}AI Assistant <button data-act="noop" aria-label="Good">${ic('up', 16)}</button><button data-act="noop" aria-label="Bad">${ic('down', 16)}</button><button data-act="aiAssist" aria-label="Regenerate">${ic('refresh', 16)}</button><button data-act="clearAI" aria-label="Close">${ic('close', 14)}</button></span>`;
     box = `<div class="cp-box ${S.summary ? 'ai' : ''}"><span style="position:absolute;top:4px;left:50%;transform:translateX(-50%);width:40px;height:3px;border-radius:2px;background:${S.summary ? 'var(--s1000)' : 'var(--p1000)'}"></span>${chip}<textarea class="cp-text" id="cp-in" aria-label="Message">${esc(S.draft)}</textarea>
-      <div class="cp-tools"><button class="ibtn" data-act="noop" aria-label="Attach">${ic('attach', 22)}</button><button class="ibtn" data-pop data-act="tplPop" aria-label="Templates">${ic('tplI', 22)}</button><button class="ibtn" data-act="noop" aria-label="Voice">${ic('mic', 22)}</button>${chBtn}<span class="grow"></span>${aiTgl}<button class="ibtn" style="color:var(--p1000)" data-act="send" aria-label="Send">${ic('send', 24)}</button></div></div>`;
-  } else box = `<div class="cp-box"><div class="cp-line"><button class="ibtn" data-act="noop" aria-label="Attach">${ic('attach', 22)}</button><button class="ibtn" data-pop data-act="tplPop" aria-label="Templates">${ic('tplI', 22)}</button><button class="ibtn" data-act="noop" aria-label="Voice">${ic('mic', 22)}</button>${chBtn}<input id="cp-in" data-send placeholder="from ${esc(c.handle)}" value="${esc(S.draft)}" aria-label="Message">${aiTgl}<button class="ibtn" style="color:var(--p1000)" data-act="send" aria-label="Send">${ic('send', 24)}</button></div></div>`;
+      <div class="cp-tools"><button class="ibtn" data-act="noop" aria-label="Attach">${ic('attach', 22)}</button><button class="ibtn" data-pop data-act="tplPop" aria-label="Templates">${ic('tplI', 22)}</button><button class="ibtn" data-act="noop" aria-label="Voice">${ic('mic', 22)}</button>${chBtn}<span class="grow"></span>${aiTgl}<button class="ibtn send-btn ${S.draft.trim() || S.tpl ? 'ready' : ''}" data-act="send" aria-label="Send">${ic('send', 24)}</button></div></div>`;
+  } else box = `<div class="cp-box"><div class="cp-line"><button class="ibtn" data-act="noop" aria-label="Attach">${ic('attach', 22)}</button><button class="ibtn" data-pop data-act="tplPop" aria-label="Templates">${ic('tplI', 22)}</button><button class="ibtn" data-act="noop" aria-label="Voice">${ic('mic', 22)}</button>${chBtn}<input id="cp-in" data-send placeholder="from ${esc(c.handle)}" value="${esc(S.draft)}" aria-label="Message">${aiTgl}<button class="ibtn send-btn ${S.draft.trim() || S.tpl ? 'ready' : ''}" data-act="send" aria-label="Send">${ic('send', 24)}</button></div></div>`;
   return `<div class="composer ${S.mode === 'comment' ? 'cmt' : ''}" style="${S.mode === 'comment' ? 'background:var(--g100)' : ''}">${top}${box}</div>
-    <button class="sumlink ${S.summary ? 'done' : ''}" data-act="summarize" ${S.summary ? 'aria-disabled="true"' : ''}>${S.summary ? `<span>${ic('msgSq', 18)}</span>Summarized <span>${ic('check', 14)}</span>` : `<span>${ic('msgSq', 18)}</span>Summarize Conversation`}</button>`;
+    <button class="sumlink ${S.summary ? 'done' : ''}" data-act="summarize" ${S.summary ? 'aria-disabled="true"' : ''}>${S.summary ? `<span>${ic('msgSq', 18)}</span>Summarized <span>${ic('check', 14)}</span>` : `<span>${ic('sumSq', 20)}</span>Summarize Conversation`}</button>`;
 }
 function renderChat() {
   const c = cur();
@@ -718,16 +734,16 @@ function renderChat() {
   }
   const L = msgsOf(c);
   const n = countMatches(c);
-  const handleBtn = c.handles.length > 1 ? `<button class="row" style="gap:2px;color:var(--s1000)" data-pop data-act="handlePop" aria-label="Switch conversation">${esc(c.handle)}${ic('chev', 14)}</button>` : `<span>${esc(c.handle)}</span>`;
+  const handleBtn = c.handles.length > 1 ? `<button class="row" style="gap:2px;color:var(--g600)" data-pop data-act="handlePop" aria-label="Switch conversation">${esc(c.handle)}${ic('chev', 14)}</button>` : `<span>${esc(c.handle)}</span>`;
   const head = `<div class="ch-head">
-      <button class="ibtn m-only" data-act="mBack" aria-label="Back to inbox">${ic('back', 22)}</button>
+      <button class="ibtn m-only" data-act="mBack" aria-label="Back to inbox">${ic('back', 22)}</button>${S.listCollapsed ? `<button class="ibtn" style="color:var(--g600)" data-act="listTgl" aria-label="Show inbox list">${ic('sbr', 24)}</button>` : ''}
       ${avatar(c, 40, c.ch)}
-      <div class="grow"><div class="t1 trunc">${esc(c.name)}</div><div class="t2">${c.f.snoozed ? `<span style="color:var(--s1000)" class="row">${handleBtn}</span><span>•</span><span style="color:var(--s1000)" class="row">${ic('timer', 14)}&nbsp;Snoozed for ${c.snoozeLabel || '24 hours'}</span>` : `${handleBtn}`}</div></div>
+      <div class="grow"><div class="t1 trunc">${esc(c.name)}</div><div class="t2">${c.f.snoozed ? `<span style="color:var(--s1000)" class="row">${handleBtn.replace('color:var(--g600)', 'color:var(--s1000)')}</span><span>•</span><span style="color:var(--s1000)" class="row">${ic('timer', 14)}&nbsp;Snoozed for ${c.snoozeLabel || '24 hours'}</span>` : `${handleBtn}`}</div></div>
       <div class="row" style="gap:4px">
         ${c.f.snoozed ? `<button class="ibtn" data-act="unsnooze" aria-label="Snoozed – click to unsnooze">${ic('timer', 24)}</button>` : ''}
         ${c.f.closed ? `<span class="ibtn" title="Closed">${ic('tickSq', 24)}</span>` : ''}
         <button class="ibtn ${S.csearch ? 'on' : ''}" data-act="cSearch" aria-label="Search in conversation">${ic('search', 24)}</button>
-        <button class="ibtn" data-act="unreadTgl" aria-label="Mark as unread">${ic(c.unreadFlag ? 'mailDot' : 'mail', 24)}</button>
+        <button class="ibtn" data-act="unreadTgl" aria-label="Mark as unread">${ic('mailDot', 24)}</button>
         <button class="ibtn ${c.star ? 'on' : ''}" data-act="starTgl" aria-label="Star">${ic(c.star ? 'starF' : 'star', 24)}</button>
         <button class="ibtn m-only" data-act="mInfo" aria-label="Contact info">${ic('user', 24)}</button>
         <button class="ibtn" data-pop data-act="morePop" id="more-btn" aria-label="More options">${ic('dots', 24)}</button>
@@ -758,11 +774,11 @@ function fieldRow(c, key) {
     case 'name': return row('user', 'Name:', `<span class="v">${esc(I.name)}</span>`, false);
     case 'life': return row('flash', 'Lifecycle:', `<span class="pill">${esc(I.life)}</span>`, false, 'convertOpen');
     case 'src': return row('hier', 'Source:', `<span class="pill blue">${chIcon(I.src, 16)}Messanger</span>`, false, 'noop');
-    case 'phone': return I.phone ? row('call', '', `<span style="font-size:14px">🇺🇸</span><span style="font-size:14px;color:var(--g800)">${I.cc}</span><span style="width:12px;height:12px;border-radius:50%;background:var(--g1000);display:inline-block"></span><span class="v">${esc(I.phone)}</span>`, false) : row('call', 'Phone:', '<span class="ph">Click to write</span>', true);
-    case 'email': return I.email ? row('sms', 'Email:', `<span class="v">${esc(I.email)}</span>`, false) : row('sms', 'Email:', '<span class="ph">Click to write</span>', true);
-    case 'dob': return I.dob ? row('cal', 'Date of Birth:', `<span class="v">${dob}</span>`, false) : row('cal', 'Date of Birth:', '<span class="ph">Click to add</span>', true);
-    case 'interest': return I.interest.length ? row('teacher', 'Interested in:', `<span class="pill">${esc(I.interest[0])}</span>${I.interest.length > 1 ? `<span class="pill p">+${I.interest.length - 1}</span>` : ''}`, false) : row('teacher', 'Interested in:', '<span class="ph">Click to add</span>', true);
-    case 'comments': return I.comments ? row('msgSq', 'Comments:', `<span class="pill p">+${I.comments}</span>`, false, 'commentsOpen') : row('msgSq', 'Comments:', '<span class="ph">Click to add</span>', true, 'commentsOpen');
+    case 'phone': return I.phone ? row('call', '', `<span style="font-size:14px">🇺🇸</span><span style="font-size:14px;color:var(--g800)">${I.cc}</span><span style="width:12px;height:12px;border-radius:50%;background:var(--g1000);display:inline-block"></span><span class="v">${esc(I.phone)}</span>`, false) : row('call', '<span class="lb">Phone:</span>', '<span class="ph">Click to write</span>', true);
+    case 'email': return I.email ? row('sms', 'Email:', `<span class="v">${esc(I.email)}</span>`, false) : row('sms', '<span class="lb">Email:</span>', '<span class="ph">Click to write</span>', true);
+    case 'dob': return I.dob ? row('cal', 'Date of Birth:', `<span class="v">${dob}</span>`, false) : row('cal', '<span class="lb">Date of Birth:</span>', '<span class="ph">Click to add</span>', true);
+    case 'interest': return I.interest.length ? row('teacher', 'Interested in:', `<span class="pill">${esc(I.interest[0])}</span>${I.interest.length > 1 ? `<span class="pill p">+${I.interest.length - 1}</span>` : ''}`, false) : row('teacher', '<span class="lb">Interested in:</span>', '<span class="ph">Click to add</span>', true);
+    case 'comments': return I.comments ? row('msgSq', 'Comments:', `<span class="pill p">+${I.comments}</span>`, false, 'commentsOpen') : row('msgSq', '<span class="lb">Comments:</span>', '<span class="ph">Click to add</span>', true, 'commentsOpen');
   }
 }
 function renderInfo() {
@@ -781,14 +797,14 @@ function renderInfo() {
         <button class="dash ${S.pop && S.pop.t === 'assign' ? 'on' : ''}" data-pop data-act="assignPop">Assign to ${S.pop && S.pop.t === 'assign' ? ic('closeC', 16) : ic('addC', 16)}</button>
         <button class="dash ${S.pop && S.pop.t === 'rank' ? 'on' : ''}" data-pop data-act="rankPop">Rank ${S.pop && S.pop.t === 'rank' ? ic('closeC', 16) : ic('addC', 16)}</button>
         <button class="dash ${S.pop && S.pop.t === 'label' ? 'on' : ''}" data-pop data-act="labelPop">Label ${S.pop && S.pop.t === 'label' ? ic('closeC', 16) : ic('addC', 16)}</button></div>`;
-  const photo = c.photo || fullHead;
+  const photo = fullHead;
   el.innerHTML = `<div class="in-full col" style="min-height:0;flex:1">
       <div class="m-only" style="justify-content:center;padding-top:8px"><span style="width:40px;height:4px;border-radius:2px;background:var(--p200)"></span></div>
       <div class="in-top"><button class="ibtn collapse-btn" data-act="infoTgl" aria-label="Collapse contact info">${ic('sbr', 24)}</button><button class="ibtn m-only" data-act="mInfoClose" aria-label="Close">${ic('close', 24)}</button><button class="ibtn" data-act="copyId" aria-label="Copy contact ID">${ic('copy', 24)}</button></div>
       <div class="in-body scroll">
         <div class="prof">
-          <span class="av" style="width:80px;height:80px;font-size:28px;${photo ? 'background:linear-gradient(135deg,#6a5340,#2a2018);color:#fff;box-shadow:0 0 0 2px #fff,0 0 0 4px var(--p800)' : ''}">${photo ? 'SG' : 'SG'}</span>
-          <div class="nm" style="margin-top:6px">${esc(c.info.name)}${c.verified ? `<span style="color:var(--p400)">${ic('user', 16)}</span>` : ''}</div><div class="id">ID:1234567890</div>
+          <span class="av" style="width:80px;height:80px;font-size:20px;${photo ? 'background:linear-gradient(135deg,#6a5340,#2a2018);color:#fff' : 'background:var(--p100);color:var(--p1000)'}">${photo ? 'SG' : 'SG'}</span>
+          <div class="nm" style="margin-top:6px">${esc(c.info.name)}</div><div class="id">ID:1234567890</div>
         </div>
         ${chips}
         <div class="col" style="gap:12px;margin-top:16px">${['name', 'life', 'src', 'phone', 'email', 'dob', 'interest', 'comments'].map(k => fieldRow(c, k)).join('')}</div>
@@ -807,7 +823,7 @@ function renderInfo() {
 function popHTML() {
   const p = S.pop; if (!p) return '';
   const c = cur();
-  if (p.t === 'filter') return `<div class="pop" data-w="300" style="width:300px;max-height:min(640px,calc(100vh - 160px));overflow:auto" role="dialog" aria-label="Filter">
+  if (p.t === 'filter') return `<div class="pop" data-w="320" style="width:320px;max-height:min(640px,calc(100vh - 160px));overflow:auto" role="dialog" aria-label="Filter">
       <div class="pop-pad col" style="gap:12px">
         ${[['Conversation Type', 'type', [['all', 'All Conversations'], ['mine', 'Assigned to me'], ['unassigned', 'Unassigned']]],
           ['Channel', 'ch', [['', 'All channels'], ...Object.keys(CH).map(k => [k, CH[k].name])]],
@@ -826,17 +842,17 @@ function popHTML() {
   if (p.t === 'rank') return `<div class="pop" data-w="260"><div class="pop-pad row" style="gap:8px">${Object.keys(RANKS).map(k => `<button class="lbl rank-${k}" style="gap:6px" data-act="rankSet" data-arg="${k}" role="radio" aria-checked="${c.rank === k}"><span class="radio ${c.rank === k ? 'on' : ''}" style="width:14px;height:14px"></span>${RANKS[k].n} ${RANKS[k].e}</button>`).join('')}</div></div>`;
   if (p.t === 'label') return `<div class="pop" data-w="330"><div class="pop-pad col" style="gap:10px"><div class="row" style="gap:8px"><label class="search" style="height:36px;flex:1"><span class="s-in">${ic('search', 16)}<input placeholder="Search in.." aria-label="Search labels"></span></label><button class="btn btn-icon" style="width:36px;height:36px" data-act="noop" aria-label="New label">${ic('plus', 18)}</button></div>
       <div class="row" style="gap:8px;flex-wrap:wrap">${LABELS.map((l, i) => `<button class="lbl ${l.k}" style="gap:6px" data-act="labelSet" data-arg="${i}" role="checkbox" aria-checked="${c.labels.includes(i)}"><span class="cbx ${c.labels.includes(i) ? 'on' : ''}" style="width:14px;height:14px;border-color:currentColor">${c.labels.includes(i) ? `<span style="color:#fff">${ic('check', 10)}</span>` : ''}</span>${l.n}</button>`).join('')}</div></div></div>`;
-  if (p.t === 'more') return `<div class="pop" data-w="230" style="padding:4px 0">
+  if (p.t === 'more') return `<div class="pop" data-w="262" style="width:262px;padding:4px 0">
       <button class="menu-i" data-act="snoozeOpen">${ic('timer', 18).replace(/#FD8100/g, 'currentColor')}Snooze</button><button class="menu-i" data-act="mergeOpen">${ic('users', 18)}Merge with other contact</button>
       <button class="menu-i green" data-act="closeConv">${ic('check', 18)}Close Conversation</button><button class="menu-i red" data-act="deleteOpen">${ic('trash', 18)}Delete Conversation</button></div>`;
-  if (p.t === 'snooze') return `<div class="pop" data-w="230" style="padding:4px 0"><button class="menu-i" style="color:var(--g600);border-bottom:0" data-act="morePop2">${ic('back', 16)}Snooze until</button>
+  if (p.t === 'snooze') return `<div class="pop" data-w="262" style="width:262px;padding:4px 0"><button class="menu-i" style="color:var(--g600);border-bottom:0" data-act="morePop2">${ic('back', 16)}Snooze until</button>
       ${[['30 minutes later', '30 minutes'], ['1 hour later', '1 hour'], ['3 hours later', '3 hours'], ['Tomorrow', '24 hours'], ['This weekend', '3 days'], ['Next week', '7 days']].map(([n, l]) => `<button class="menu-i" data-act="snoozeSet" data-arg="${l}">${n}</button>`).join('')}
       <button class="menu-i" style="border-top:1px solid var(--g100)" data-act="snoozeSet" data-arg="custom date">${ic('cal', 18)}Select date</button></div>`;
-  if (p.t === 'handle') return `<div class="pop" data-w="230"><div class="pop-pad col" style="gap:2px"><div style="font-size:13px;color:var(--g600);padding:2px 8px 6px">Switch conversation to</div>${c.handles.map((h, i) => `<button class="opt" data-act="noop"><span style="margin-left:0">${chIcon(h.ch, 16)}</span><span class="grow">${esc(h.h)}</span><span class="cbx ${i === 0 ? 'on' : ''}">${i === 0 ? `<span style="color:#fff">${ic('check', 12)}</span>` : ''}</span></button>`).join('')}</div></div>`;
+  if (p.t === 'handle') return `<div class="pop" data-w="230"><div class="pop-pad col" style="gap:2px"><div style="font-size:13px;color:var(--g600);padding:2px 8px 6px">Switch conversation to</div>${c.handles.map((h, i) => `<button class="opt" data-act="noop"><span style="margin-left:0">${chIcon(h.ch, 16)}</span><span class="grow">${CH[h.ch].name}</span><span class="cbx ${i === 0 ? 'on' : ''}">${i === 0 ? `<span style="color:#fff">${ic('check', 12)}</span>` : ''}</span></button>`).join('')}</div></div>`;
   if (p.t === 'ch') return `<div class="pop" data-w="230"><div class="pop-pad col" style="gap:2px"><div style="font-size:13px;color:var(--g600);padding:2px 8px 6px">Switch conversation to</div>${c.handles.map((h, i) => `<button class="opt" data-act="noop">${chIcon(h.ch, 16)}<span class="grow">${esc(h.h)}</span><span class="cbx ${i === 0 ? 'on' : ''}">${i === 0 ? `<span style="color:#fff">${ic('check', 12)}</span>` : ''}</span></button>`).join('')}</div></div>`;
   if (p.t === 'tpl' || p.t === 'exptpl') {
     const exp = p.t === 'exptpl';
-    return `<div class="pop" data-w="340" style="width:${exp ? 340 : 330}px;max-height:min(560px,calc(100vh - 120px));overflow:auto"><div class="pop-pad col" style="gap:8px">
+    return `<div class="pop" data-w="400" style="width:400px;max-height:min(560px,calc(100vh - 120px));overflow:auto"><div class="pop-pad col" style="gap:8px">
       <div class="row" style="gap:8px"><label class="search" style="height:40px;flex:1"><span class="s-in">${ic('search', 16)}<input placeholder="Search in Templates" aria-label="Search templates" data-tpl-search></span></label>${exp ? '' : `<button class="btn btn-icon" style="width:40px" data-act="addTplOpen" aria-label="Add new template">${ic('plus', 20)}</button>`}</div>
       ${S.tplList.map(t => `<div class="tpl ${S.tplSel === t.id ? 'sel' : ''}" role="button" tabindex="0" data-act="tplSelect" data-arg="${t.id}">
         <div class="tt">${chIcon(t.ch, 18)}${esc(t.n)}${t.status ? `<span class="pend">${t.status}</span>` : ''}${!exp && S.tplSel === t.id ? `<span class="row" style="margin-left:auto;gap:6px;color:var(--g600)"><button data-act="noop" aria-label="Edit">${ic('edit', 16)}</button><button data-act="tplDel" data-arg="${t.id}" aria-label="Delete">${ic('trash', 16)}</button></span>` : ''}</div>
@@ -891,9 +907,9 @@ function renderLayer() {
     const r = S.pop.r, w = pop.offsetWidth, h = pop.offsetHeight, vw = innerWidth, vh = innerHeight;
     let left = S.pop.align === 'right' ? r.right - w : r.left;
     let top = r.bottom + 6;
-    if (S.pop.t === 'tpl' || S.pop.t === 'exptpl') { top = r.top - h - 8; if (top < 8) top = 8; }
-    if (S.pop.t === 'sort') { left = r.left + 12 > vw - w - 8 ? vw - w - 8 : r.right + 6; top = r.top; }
-    if (S.pop.t === 'filter') { left = r.left; top = r.bottom + 6; }
+    if (S.pop.t === 'tpl' || S.pop.t === 'exptpl' || S.pop.t === 'ch') { top = r.top - h - 8; if (top < 8) top = 8; if (S.pop.t === 'tpl') left = (r.left + r.right) / 2 - w / 2; }
+    if (S.pop.t === 'sort') { left = r.right - w; top = r.bottom + 8; }
+    if (S.pop.t === 'filter') { const sb = $('#ct-tools .search'); const b = sb ? sb.getBoundingClientRect() : r; left = b.left; top = b.bottom + 8; }
     left = Math.max(8, Math.min(left, vw - w - 8)); top = Math.max(8, Math.min(top, vh - h - 8));
     pop.style.left = left + 'px'; pop.style.top = top + 'px';
   }
@@ -910,8 +926,8 @@ function renderPop2() {
   const pop = $('.pop', d), r = secondPop.r;
   const fp = $('#layer > .pop'); const fr = fp ? fp.getBoundingClientRect() : null;
   pop.style.whiteSpace = 'nowrap'; pop.style.width = '190px';
-  let L = fr ? fr.right + 8 : r.left; if (L + 190 > innerWidth - 8) L = Math.max(8, (fr ? fr.left : r.left) - 198);
-  pop.style.left = L + 'px'; pop.style.top = (fr ? fr.top : r.bottom + 6) + 'px';
+  const sb = $('#sbtn').getBoundingClientRect();
+  pop.style.left = Math.max(8, sb.right - 190) + 'px'; pop.style.top = (sb.bottom + 8) + 'px';
 }
 
 /* ---------- toast ---------- */
@@ -925,7 +941,7 @@ function toast(o) {
 
 /* ---------- master render ---------- */
 function renderAll() {
-  document.body.classList.toggle('info-collapsed', S.infoCollapsed);
+  document.body.classList.toggle('info-collapsed', S.infoCollapsed); document.body.classList.toggle('list-collapsed', !!S.listCollapsed && !mqM.matches);
   document.body.dataset.mview = S.mview;
   document.body.classList.toggle('m-info', S.mInfo);
   renderList(); renderChat(); renderInfo(); renderLayer(); renderPop2();
@@ -1017,6 +1033,7 @@ const ACT = {
   starTgl() { const c = cur(); c.star = !c.star; renderAll(); },
   unreadTgl() { const c = cur(); c.unreadFlag = !c.unreadFlag; if (c.unreadFlag && !c.unread) c.unread = 1; renderAll(); toast({ title: c.unreadFlag ? 'Marked as unread' : 'Marked as read' }); },
   handlePop(a, el) { openPop('handle', el); }, chPop(a, el) { openPop('ch', el); },
+  listTgl() { S.listCollapsed = !S.listCollapsed; S.pop = null; renderAll(); },
   infoTgl() { S.infoCollapsed = !S.infoCollapsed; renderAll(); },
   copyId() { try { navigator.clipboard && navigator.clipboard.writeText('1234567890'); } catch (e) {} toast({ title: 'Contact ID copied', text: 'ID:1234567890' }); },
   assignPop(a, el) { openPop('assign', el); }, rankPop(a, el) { openPop('rank', el); }, labelPop(a, el) { openPop('label', el); },
@@ -1048,7 +1065,7 @@ document.addEventListener('keydown', e => {
 document.addEventListener('input', e => {
   const t = e.target;
   if (t.id === 'q') { S.q = t.value; S.forceEmpty = false; const pos = t.selectionStart; renderList(); const q = $('#q'); q.focus(); q.setSelectionRange(pos, pos); }
-  else if (t.id === 'cp-in') S.draft = t.value;
+  else if (t.id === 'cp-in') { S.draft = t.value; $$('.send-btn').forEach(b => b.classList.toggle('ready', !!t.value.trim() || !!S.tpl)); }
   else if (t.id === 'cq') { S.cq = t.value; S.cidx = 0; const pos = t.selectionStart; renderChat(); const q = $('#cq'); q.focus(); q.setSelectionRange(pos, pos); }
   else if (t.dataset.nt) { S.newTpl[t.dataset.nt] = t.value; if (t.dataset.nt === 'body') { const pos = t.selectionStart; renderLayer(); const b = $('[data-nt=body]'); b.focus(); b.setSelectionRange(pos, pos); } }
   else if (t.dataset.tplSearch !== undefined) { const v = t.value.toLowerCase(); $$('.tpl').forEach(x => x.style.display = x.textContent.toLowerCase().includes(v) ? '' : 'none'); }
@@ -1082,8 +1099,9 @@ const DEMOS = [
   ['Label', () => { reset(); select('c5'); setTimeout(() => openPop('label', $('[data-act=labelPop]')), 20); }],
   ['Search in conversation', () => { reset(); S.csearch = true; S.cq = 'happy'; }],
   ['Collapsed contact info panel', () => { reset(); S.infoCollapsed = true; }],
+  ['Hidden contacts panel', () => { reset(); S.listCollapsed = true; select('c4'); }],
   ['AI assisted', () => { reset(); S.ai = true; S.draft = AI_TXT; }],
-  ['Templates', () => { reset(); setTimeout(() => openPop('tpl', $('[data-act=tplPop]')), 20); }],
+  ['Templates', () => { reset(); S.listCollapsed = true; select('c4'); setTimeout(() => openPop('tpl', $('[data-act=tplPop]')), 20); }],
   ['Template selected', () => { reset(); S.tpl = TEMPLATES[0]; S.draft = AI_TXT; }],
   ['Add new template', () => { reset(); S.modal = { t: 'addTpl' }; }],
   ['As comment', () => { reset(); S.mode = 'comment'; }],
@@ -1091,15 +1109,15 @@ const DEMOS = [
   ['Expired WhatsApp', () => { reset(); select('c1'); }],
   ['Expired WhatsApp → send template', () => { reset(); select('c1'); setTimeout(() => { S.tplSel = 't2'; openPop('exptpl', $('#exp-btn'), { align: 'right' }); }, 20); }],
   ['Summary', () => { reset(); S.summary = true; S.draft = AI_TXT; }],
-  ['More options', () => { reset(); setTimeout(() => openPop('more', $('#more-btn'), { align: 'right' }), 20); }],
-  ['More → Snooze', () => { reset(); setTimeout(() => ACT.snoozeOpen(), 20); }],
+  ['More options', () => { reset(); S.listCollapsed = true; select('c4'); setTimeout(() => openPop('more', $('#more-btn'), { align: 'right' }), 20); }],
+  ['More → Snooze', () => { reset(); S.listCollapsed = true; select('c4'); setTimeout(() => ACT.snoozeOpen(), 20); }],
   ['Snoozed conversation', () => { reset(); select('c4'); }],
   ['Merge with other contact', () => { reset(); S.modal = { t: 'merge' }; }],
   ['Delete conversation', () => { reset(); S.modal = { t: 'delete' }; }],
   ['Closed conversation', () => { reset(); select('c6'); }],
   ['Convert to lead (+ toast)', () => { reset(); S.modal = { t: 'convert' }; }]
 ];
-function reset() { S.forceEmpty = false; S.q = ''; S.tab = 'all'; S.sel = 'c2'; S.mode = 'reply'; S.ai = false; S.tpl = null; S.summary = false; S.draft = ''; S.pop = null; secondPop = null; S.modal = null; S.csearch = false; S.cq = ''; S.infoCollapsed = false; S.editing = null; S.tplSel = null; S.filters = { type: 'all', ch: '', rank: '', asg: '', label: '' }; if (!CONTACTS.find(c => c.id === 'c2')) S.sel = CONTACTS[0] && CONTACTS[0].id; }
+function reset() { S.listCollapsed = false; S.forceEmpty = false; S.q = ''; S.tab = 'all'; S.sel = 'c2'; S.mode = 'reply'; S.ai = false; S.tpl = null; S.summary = false; S.draft = ''; S.pop = null; secondPop = null; S.modal = null; S.csearch = false; S.cq = ''; S.infoCollapsed = false; S.editing = null; S.tplSel = null; S.filters = { type: 'all', ch: '', rank: '', asg: '', label: '' }; if (!CONTACTS.find(c => c.id === 'c2')) S.sel = CONTACTS[0] && CONTACTS[0].id; }
 function renderDemo() {
   const p = $('#demo-pane'); p.hidden = !S.demoOpen; $('#demo-btn').textContent = S.demoOpen ? 'States ▴' : 'States ▾';
   if (!S.demoOpen) return;
